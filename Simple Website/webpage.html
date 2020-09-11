@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrap {
+            width: 100%;
+        }
+
+        .header-wrapper {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo-wrapper {
+            width: 25%;
+            float: left;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+
+        .nav-wrapper {
+            width: 75%;
+            float: left;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+
+        .logo-wrapper img {
+            width: 75%;
+        }
+
+        ul.nav-lists {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            float: right;
+        }
+
+        .nav-lists li {
+            float: left;
+            line-height: 60px;
+            padding: 0 10px;
+        }
+
+        .nav-lists a {
+            color: #444;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .wrapper {
+            width: 100%;
+            height: 100vh;
+            margin: 0 auto;
+            float: left;
+        }
+
+        .box1,
+        .box2 {
+            height: 100vh;
+            width: 30%;
+            background-color: white;
+            float: left;
+            /* text-align: center; */
+        }
+
+        .box2 {
+            width: 70%;
+            background-color: #f1f1f1
+        }
+
+        .box1 p {
+            /* margin: 0 auto; */
+            border-bottom: 2px solid black;
+            width: 80%;
+            /* margin-top: 70px; */
+            /* text-align: center; */
+        }
+
+        .child1 h1 {
+            font-size: 26px;
+            /* margin-top: 70px; */
+            /* margin: 0 auto; */
+
+        }
+
+        .child2,
+        .child1 {
+            margin-top: 40px;
+        }
+
+        .child2 h1 {
+            font-size: 15px;
+            margin-top: 40px;
+            margin: 0 auto;
+        }
+
+        .field {
+            margin: 0;
+            float: left;
+            width: 70%;
+            height: 20px;
+            margin-left: 40px;
+        }
+
+        .child4 {
+            height: 360px;
+            width: 70%;
+            /* background-color: black; */
+
+        }
+
+        .pic {
+            height: 321px;
+            width: 100%;
+            margin: 50px 0px 0px 50px;
+        }
+
+        .child5 {
+            /* height: 400px; */
+            width: 70%;
+        }
+
+        .child5,
+        p h1 {
+            margin-left: 13%;
+        }
+
+        .child5 p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header-wrapper">
+            <div class="logo-wrapper">
+                <a href="./webpage.html"><img src="./images/greenhouse-logo.png"></a>
+            </div>
+            <div class="nav-wrapper">
+                <ul class="nav-lists">
+                    <li><a href="./webpage.html">Home</a></li>
+                    <li><a href="./signin.html">Sign In</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="box1">
+                <ul>
+                    <!-- <li> -->
+                    <div class="child1">
+                        <ul>
+                            <h1>Twenty Fifteen</h1>
+                            <p> The WordPress default theme for 2015.</p>
+                        </ul>
+                    </div>
+                    <!-- </li> -->
+                    <div class="child2">
+                        <ul>
+                            <h1> About Twenty Fifteen</h1>
+                            <p> Read me</p>
+                            <h1> Redability</h1>
+                            <p> Twenty Fifteen supports optional menu description.</p>
+                            <h1> Image Alignment and Styles</h1>
+                            <p> Check alignment and style here.</p>
+                            <h1> HTML Elements</h1>
+                            <p> Check out styles for some HTML elements.</p>
+                            <h1> A Parent Page</h1>
+                            <p> This is drop down demo.</p>
+                        </ul>
+                    </div>
+                    <div class="child3">
+                        <i class="fab fa-google-plus-g-4x"></i>
+                        <i class="far fa-arrow-alt-circle-right"></i>
+                    </div>
+                    <form>
+                        <input type="text" name="" class="field" placeholder="Search...">
+                    </form>
+            </div>
+            <div class="box2">
+                <div class="child4">
+                    <img src="../Simple Website/images/best-laptop-brands.jpg" class="pic">
+                </div>
+                <div class="child5">
+                    <h1> Sticky post with a<br>Featured Image</h1>
+                    <p> Our 2015 default theme is clean,blog-focused,and designed for clarity<br>
+                        Twenty Fifteen's simple,straightforward tropography is readable on a<br>
+                        Wide variety of screen sizes,and suitable for multiple languages.We<br>
+                        designed it using a mobil- first apporach,meaning your content takes<br>
+                        center-stage,regardless of whether your visitors arrive by smartphones,<br>
+                        tablet,laptop,or desktop computer.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

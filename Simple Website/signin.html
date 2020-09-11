@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 100%;
+        }
+
+        .header-wrapper {
+            width: 100%;
+            height: 60px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .logo-wrapper {
+            width: 25%;
+            float: left;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+
+        .nav-wrapper {
+            width: 75%;
+            float: left;
+            padding: 0 25px;
+            box-sizing: border-box;
+        }
+
+        .logo-wrapper img {
+            width: 75%;
+        }
+
+        ul.nav-lists {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            float: right;
+        }
+
+        .nav-lists li {
+            float: left;
+            line-height: 60px;
+            padding: 0 10px;
+        }
+
+        .nav-lists a {
+            color: #444;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        label {
+            display: inline-block;
+            /* display: flex; */
+            height: 40px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .flex Account {
+            margin-left: 20px;
+        }
+
+        .PersonalDetails {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .box1,
+        .box2 {
+            width: 50%;
+            text-align: center;
+        }
+
+        .select {
+            width: 150px;
+        }
+
+        .box2 h2 {
+            color: darkmagenta;
+
+        }
+
+        .box1 h2 {
+            color: darkmagenta;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-wrapper">
+        <div class="logo-wrapper">
+            <a href="./webpage.html"><img src="./images/greenhouse-logo.png"></a>
+        </div>
+        <div class="nav-wrapper">
+            <ul class="nav-lists">
+                <li><a href="./webpage.html">Home</a></li>
+                <li><a href="./signin.html">Sign In</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <h1>Registration</h1>
+    <form>
+        <div class="flex">
+            <div class="Account">
+                <label><b> Email:</b></label>
+                <input type="text" name="Email">
+                <label><b>Repeat Email: </b></label>
+                <input type="text" name="Password">
+            </div>
+            <div class="reg11">
+                <label><b>Password:</b> </label>
+                <input type="text" name="Repeat Email">
+                <label><b>Repeat Password: </b></label>
+                <input type="text" name="Password">
+            </div>
+        </div>
+        <div class="PersonalDetails">
+            <div class="box1">
+                <h2>Personal Details</h2>
+                <div class="Personal">
+                    <label> <b>Name: </b></label>
+                    <input type="text" name=" Name"><br><br>
+                    <label> <b>Phone: </b></label>
+                    <input type="text" name=" Phone"><br><br>
+                    <label> <b>Street: </b></label>
+                    <input type="text" name=" Street"><br><br>
+                    <label> <b>City: </b> </label>
+                    <input type="text" name=" CIty"><br><br>
+                    <label> <b>Country: </b></label>
+                    <input type="text" name=" Country"><br><br>
+                    <label> <b> Website: </b></label>
+                    <input type="text" name=" Website"><br><br>
+                </div>
+            </div>
+            <div class="box2">
+                <h2>Further Information</h2>
+                <div class="info">
+                    <label> <b> Gender:</b></label>
+                    <input type="radio" name="Gender" value="Male">Male
+                    <input type="radio" name="Gender" value="Female">Female<br><br>
+                    <label><b> Birthaday:</b></label>
+                    <select name="Date">
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                    </select>
+                    <select name="Month">
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                    </select>
+                    <select name="Year">
+                        <option value="1990">1990</option>
+                        <option value="1991">1991</option>
+                        <option value="1992">1992</option>
+                        <option value="1993">1993</option>
+                        <option value="1994">1994</option>
+                    </select><br>
+                    <label><b>Nationality:</b></label>
+                    <select name="Nationality" class="select">
+                        <option value="Hindu"> Hindu</option>
+                        <option value="Indian">Muslim</option>
+                    </select><br>
+                    <label> <b>Children: </b></label>
+                    <input type="text" name="Children" class="child1"><br><br>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
